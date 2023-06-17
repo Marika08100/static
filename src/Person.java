@@ -1,9 +1,17 @@
+
 public class Person {
-    // írj egy statikus fieldet popular néven
+    private static int count;
 
-    // írj egy konstruktort ami megnöveli a statikus fieldünket
+    public Person() {
+        count++;
+    }
 
-    // írj egy metódust ami vissza adja a popular értékét
+    public static int getCount() {
+        return count;
+    }
 
-    // írj egy katasztrófa statikus metódust ami nulláza a populart
+    public void disaster() {
+        System.out.println("Katasztrofa! ");
+    }
 }
+
